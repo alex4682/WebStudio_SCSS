@@ -1,0 +1,22 @@
+body{
+    font-family: roboto;
+}
+.port_name{
+    font-family: raleway;
+    font-weight: 700;
+}
+.port_nav{
+    font-weight: 500;
+}
+h1{
+    font-weight: 700;
+}
+button{
+    font-weight: 500;
+}
+h2{
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+}
