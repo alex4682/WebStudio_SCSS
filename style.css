@@ -30,3 +30,18 @@ footer>a:not(.name){
     font-family: roboto;
     font-weight: 400;
 }
+
+.port_nav {
+    font-family: roboto;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.button {
+    font-family: roboto;
+    font-weight: 500;
+}
