@@ -1,47 +1,47 @@
+body{
+    font-family: roboto;
+}
 .name{
     font-family: ralewey;
     font-weight: 700;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
 .nav{
-    font-family: roboto;
     font-weight: 500;
 }
 h1{
-    font-family: roboto;
     font-weight: 900;
 }
 button{
-    font-family: roboto;
     font-weight: 700;
 }
 h3{
-    font-family: roboto;
     font-weight: 700;
 }
 p{
-    font-family: roboto;
     font-weight: 400;
 }
 h2{
-    font-family: roboto;
     font-weight: 700;
 }
 footer>a:not(.name){
-    font-family: roboto;
     font-weight: 400;
 }
 
 .port_nav {
-    font-family: roboto;
     font-weight: 500;
 }
 
 h1 {
-    font-family: roboto;
     font-weight: 700;
 }
 
 .button {
-    font-family: roboto;
     font-weight: 500;
+}
+.web{
+    color: blue;
 }
