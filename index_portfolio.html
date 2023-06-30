@@ -14,106 +14,147 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <a href="#" class="name"><span class="web">Web</span>Studio</a>
-      <nav class="port_nav">
-        <ul>
-          <li>
-            <a href="index.html"> студія</a>
+    <header class="header">
+      <a href="#" class="header-name"><span class="web">Web</span>Studio</a>
+      <nav class="header-nav">
+        <ul class="list-header-nav">
+          <li class="header-item-port">
+            <a href="index.html" class="header-link-port"> студія</a>
           </li>
 
-          <li>
-            <a href="index_portfolio.html">портфоліо</a>
+          <li class="header-item-port">
+            <a href="index_portfolio.html" class="header-link-port-2"
+              >портфоліо</a
+            >
           </li>
-          <li><a href="#">контакти</a></li>
+          <li class="header-item-port">
+            <a href="#" class="header-link-port">контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul class="port_nav">
-        <li><a href="#"> info@devstudio.com</a></li>
+      <ul class="contacts-list">
+        <li class="contacts-item"><a href="#"> info@devstudio.com</a></li>
         <li><a href="#">+38 096 111 11 11</a></li>
       </ul>
       <hr />
     </header>
-    <section>
-      <h1>фільтри</h1>
-      <nav>
-        <ul>
-          <li>
-            <button type="button">Усі</button>
-          </li>
-          <li>
-            <button type="button">Веб-сайти</button>
-          </li>
-          <li>
-            <button type="button">Додатки</button>
-          </li>
-          <li>
-            <button type="button">Дизайн</button>
-          </li>
-          <li>
-            <button type="button">Маркетинг</button>
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section>
-      <ul>
-        <li>
-          <img src="img/img_port.1.png" alt="Технокря" />
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
+    <section class="projects">
+      <h1 class="proj-tytle">фільтри</h1>
+      <ul class="proj-list-btn">
+        <li class="proj-item-btn">
+          <button type="button" class="proj-btn-1">Усі</button>
         </li>
-        <li>
+        <li class="proj-item-btn">
+          <button type="button" class="proj-btn">Веб-сайти</button>
+        </li>
+        <li class="proj-item-btn">
+          <button type="button" class="proj-btn">Додатки</button>
+        </li>
+        <li class="proj-item-btn">
+          <button type="button" class="proj-btn">Дизайн</button>
+        </li>
+        <li class="proj-item-btn">
+          <button type="button" class="proj-btn">Маркетинг</button>
+        </li>
+      </ul>
+      <ul class="proj-list">
+        <li class="proj-item">
+          <img src="img/img_port.1.png" alt="Технокря" class="proj-item-img" />
+          <h2 class="proj-item-tytle">Технокряк</h2>
+          <p class="proj-item-text">Веб-сайт</p>
+        </li>
+        <li class="proj-item">
           <img
             src="img/img_port.2.png"
             alt="Постер New Orlean vs Golden Star"
+            class="proj-item-img"
           />
-          <h2>Постер New Orlean vs Golden Star</h2>
-          <p>Дизайн</p>
+          <h2 class="proj-item-tytle">Постер New Orlean vs Golden Star</h2>
+          <p class="proj-item-text">Дизайн</p>
         </li>
-        <li>
-          <img src="img/img_port.3.png" alt="Ресторан Seafood" />
-          <h2>Ресторан Seafood</h2>
-          <p>Додаток</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.3.png"
+            alt="Ресторан Seafood"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Ресторан Seafood</h2>
+          <p class="proj-item-text">Додаток</p>
         </li>
-        <li>
-          <img src="img/img_port.4.png" alt="Проєкт Prime" />
-          <h2>Проєкт Prime</h2>
-          <p>Маркетинг</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.4.png"
+            alt="Проєкт Prime"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Проєкт Prime</h2>
+          <p class="proj-item-text">Маркетинг</p>
         </li>
-        <li>
-          <img src="img/img_port.5.png" alt="Проєкт Boxes" />
-          <h2>Проєкт Boxes</h2>
-          <p>Додаток</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.5.png"
+            alt="Проєкт Boxes"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Проєкт Boxes</h2>
+          <p class="proj-item-text">Додаток</p>
         </li>
-        <li>
-          <img src="img/img_port.6.png" alt="Inspiration has no Borders" />
-          <h2>Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.6.png"
+            alt="Inspiration has no Borders"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Inspiration has no Borders</h2>
+          <p class="proj-item-text">Веб-сайт</p>
         </li>
-        <li>
-          <img src="img/img_port.7.png" alt="Видання Limited Edition" />
-          <h2>Видання Limited Edition</h2>
-          <p>Дизайн</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.7.png"
+            alt="Видання Limited Edition"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Видання Limited Edition</h2>
+          <p class="proj-item-text">Дизайн</p>
         </li>
-        <li>
-          <img src="img/img_port.8.png" alt="Проєкт LAB" />
-          <h2>Проєкт LAB</h2>
-          <p>Маркетинг</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.8.png"
+            alt="Проєкт LAB"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Проєкт LAB</h2>
+          <p class="proj-item-text">Маркетинг</p>
         </li>
-        <li>
-          <img src="img/img_port.9.png" alt="Growing Business" />
-          <h2>Growing Business</h2>
-          <p>Додаток</p>
+        <li class="proj-item">
+          <img
+            src="img/img_port.9.png"
+            alt="Growing Business"
+            class="proj-item-img"
+          />
+          <h2 class="proj-item-tytle">Growing Business</h2>
+          <p class="proj-item-text">Додаток</p>
         </li>
       </ul>
     </section>
-    <footer>
-      <a href="#" class="name"><span class="web">Web</span>Studio</a>
-      <ul class="port_">
-        <li><a href="#">м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tell:+380961111111">+38 096 111 11 11</a></li>
+    <footer class="footer">
+      <a href="#" class="footer-name"><span class="web">Web</span>Studio</a>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a href="#" class="footer-item-link-1"
+            >м. Київ, пр-т Лесі Українки, 26</a
+          >
+        </li>
+        <li class="footer-item">
+          <a href="mailto:info@devstudio.com" class="footer-item-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="footer-item">
+          <a href="tell:+380961111111" class="footer-item-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </footer>
   </body>

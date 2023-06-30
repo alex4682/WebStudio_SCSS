@@ -1,47 +1,207 @@
-body{
+body {
     font-family: roboto;
+
 }
-.name{
-    font-family: ralewey;
-    font-weight: 700;
-}
-a{
+
+a {
     color: black;
     text-decoration: none;
 }
-.nav{
-    font-weight: 500;
-}
-h1{
-    font-weight: 900;
-}
-button{
-    font-weight: 700;
-}
-h3{
-    font-weight: 700;
-}
-p{
-    font-weight: 400;
-}
-h2{
-    font-weight: 700;
-}
-footer>a:not(.name){
-    font-weight: 400;
+
+ul {
+    list-style: none;
 }
 
-.port_nav {
-    font-weight: 500;
-}
-
-h1 {
-    font-weight: 700;
-}
-
-.button {
-    font-weight: 500;
-}
-.web{
+.web {
     color: blue;
+}
+
+/* ?==========main page========== */
+/* !==========header========== */
+.header-name {
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.header-item:first-child {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px
+}
+
+.list-header-nav {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.contacts-item-1 {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    ;
+}
+
+.contacts-item {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+/* !==========banner========== */
+.banner {
+    background-color: black;
+}
+
+.banner-tytle {
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    color: #FFF;
+    background-color: #2196F3;
+}
+
+/* !==========specials========== */
+.list-sp-tytle {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.list-sp-text {
+    color: #757575;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+/* !==========work========== */
+.work-tytle {
+    color: #212121;
+        text-align: center;
+        font-size: 36px;
+        letter-spacing: 1.08px;
+}
+
+/* !==========people========== */
+.people-tytle {
+    color: #212121;
+        text-align: center;
+        font-size: 36px;
+        letter-spacing: 1.08px;
+}
+.list-people-name {
+    color: #212121;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.48px;
+}
+
+.list-people-job {
+    color: #757575;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+}
+
+/* !==========footer========== */
+.footer {
+    background-color: #000;
+}
+
+.footer-name {
+    color: #FFF;
+    font-family: raleway;
+    font-weight: 700;
+}
+
+.footer-item-link {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+.footer-item-link-1 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+/* ?==========portfolio========== */
+/* !==========header========== */
+.header-link-port {
+    color: #212121;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+}
+.header-link-port-2{
+    color: #2196F3;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.28px;
+}
+/* !==========projects========== */
+.proj-tytle {
+    font-size: 94px;
+    line-height: 0;
+}
+.proj-btn {
+    color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.48px;
+}
+.proj-btn-1{
+    color: #212121;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.48px;
+        background-color: #2196F3;
+}
+.proj-item-tytle {
+    color: #212121;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 1.08px;
+}
+
+.proj-item-text {
+    color: #757575;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.48px;
 }
