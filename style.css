@@ -198,7 +198,65 @@ ul {
 }
 /* ?==========portfolio========== */
 /* !==========header========== */
+.header {
+    display: flex;
+    margin-left: 50px;
+}
 
+.header-name {
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.web {
+    color: #2196F3;
+}
+
+.header-item {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-item:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px
+}
+
+.list-header-nav {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+}
+
+.contacts-item:hover {
+    color: #2196F3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.contacts-item {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contacts-list {
+    display: flex;
+}
 /* !==========projects========== */
 .proj-tytle {
     font-size: 94px;
