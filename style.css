@@ -134,6 +134,9 @@ ul {
     margin: 40px;
 }
 /* !==========people========== */
+.people{
+    margin-top: 200px;
+}
 .people-list{
     display: flex;
 }
