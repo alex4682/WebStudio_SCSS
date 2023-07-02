@@ -12,21 +12,32 @@ ul {
     list-style: none;
 }
 
-.web {
-    color: blue;
-}
+
 
 /* ?==========main page========== */
 /* !==========header========== */
+.header{
+    display: flex;
+    margin-left: 50px;
+}
 .header-name {
-    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 26px;
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 0.78px;
 }
-
-.header-item:first-child {
+.web {
+    color: #2196F3;
+}
+.header-item{
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header-item:hover {
     color: #2196F3;
     font-size: 14px;
     font-weight: 500;
@@ -38,14 +49,14 @@ ul {
     font-family: Roboto;
     font-weight: 500;
     letter-spacing: 0.28px;
+    display: flex;
 }
 
-.contacts-item-1 {
+.contacts-item:hover {
     color: #2196F3;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    ;
 }
 
 .contacts-item {
@@ -53,11 +64,16 @@ ul {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
-
+.contacts-list{
+    display: flex;
+}
 /* !==========banner========== */
 .banner {
     background-color: black;
+    padding: 200px 452px;
 }
 
 .banner-tytle {
@@ -78,6 +94,7 @@ ul {
     letter-spacing: 0.96px;
     color: #FFF;
     background-color: #2196F3;
+    margin-left: 226px;
 }
 
 /* !==========specials========== */
@@ -96,6 +113,9 @@ ul {
     line-height: 24px;
     letter-spacing: 0.42px;
 }
+.specials-list{
+    display: flex;
+}
 
 /* !==========work========== */
 .work-tytle {
@@ -104,8 +124,19 @@ ul {
         font-size: 36px;
         letter-spacing: 1.08px;
 }
-
+.work-list{
+    display: flex;
+}
+.work-img{
+    width: 370px;
+    height: 294px;
+    box-sizing: border-box;
+    margin: 40px;
+}
 /* !==========people========== */
+.people-list{
+    display: flex;
+}
 .people-tytle {
     color: #212121;
         text-align: center;
@@ -127,16 +158,28 @@ ul {
         font-weight: 400;
         letter-spacing: 0.48px;
 }
+.people-item{
+    box-sizing: border-box;
+    width: 270px;
+    height: 260px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 /* !==========footer========== */
 .footer {
     background-color: #000;
+    width: 1600px;
+    height: 252px;
 }
 
 .footer-name {
     color: #FFF;
     font-family: raleway;
     font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 .footer-item-link {
@@ -153,7 +196,6 @@ ul {
     line-height: 24px;
     letter-spacing: 0.42px;
 }
-
 /* ?==========portfolio========== */
 /* !==========header========== */
 .header-link-port {
