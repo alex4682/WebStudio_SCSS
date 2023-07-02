@@ -72,7 +72,7 @@ ul {
 }
 /* !==========banner========== */
 .banner {
-    background-color: black;
+    background-color: #2F303A;
     padding: 200px 452px;
 }
 
@@ -172,7 +172,7 @@ ul {
 
 /* !==========footer========== */
 .footer {
-    background-color: #000;
+    background-color: #2F303A;
     width: 1600px;
     height: 252px;
 }
