@@ -198,18 +198,7 @@ ul {
 }
 /* ?==========portfolio========== */
 /* !==========header========== */
-.header-link-port {
-    color: #212121;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.28px;
-}
-.header-link-port-2{
-    color: #2196F3;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.28px;
-}
+
 /* !==========projects========== */
 .proj-tytle {
     font-size: 94px;
@@ -223,7 +212,7 @@ ul {
         line-height: 26px;
         letter-spacing: 0.48px;
 }
-.proj-btn-1{
+.proj-btn:hover{
     color: #212121;
         text-align: center;
         font-size: 16px;
