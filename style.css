@@ -139,6 +139,9 @@ ul {
 }
 .people-list{
     display: flex;
+    margin-left:  100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
 }
 .people-tytle {
     color: #212121;
@@ -165,9 +168,8 @@ ul {
     box-sizing: border-box;
     width: 270px;
     height: 260px;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /* !==========footer========== */
