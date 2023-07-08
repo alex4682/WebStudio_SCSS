@@ -115,6 +115,8 @@ ul {
 }
 .specials-list{
     display: flex;
+    width: 1170px;
+    margin: 0 auto;
 }
 
 /* !==========work========== */
@@ -126,22 +128,25 @@ ul {
 }
 .work-list{
     display: flex;
+    width: 1170px;
+    margin: 0 auto;
 }
 .work-img{
     width: 370px;
     height: 294px;
     box-sizing: border-box;
-    margin: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 /* !==========people========== */
 .people{
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 .people-list{
     display: flex;
-    margin-left:  100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    width: 1200px;
+    margin: 0 auto;
 }
 .people-tytle {
     color: #212121;
