@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header conteiner">
       <a href="#" class="header-name"><span class="web">Web</span>Studio</a>
       <nav class="header-nav">
         <ul class="list-header-nav">
@@ -48,10 +48,15 @@
       </ul>
     </header>
     <section class="banner">
-      <h1 class="banner-tytle">Eфективні рішення для вашого бізнесу</h1>
-      <button class="banner-btn">замовити послугу</button>
+      <div class="banner-wrap conteiner">
+        <h1 class="banner-tytle">
+          Eфективні рішення для<br />
+          вашого бізнесу
+        </h1>
+        <button class="banner-btn">замовити послугу</button>
+      </div>
     </section>
-    <section class="specials">
+    <section class="specials conteiner">
       <ul class="specials-list">
         <li class="secials-item">
           <h3 class="list-sp-tytle">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -82,28 +87,29 @@
         </li>
       </ul>
     </section>
-    <section class="work">
+    <section class="work conteiner">
       <h2 class="work-tytle">Чим ми займаємося</h2>
       <ul class="work-list">
         <li class="work-item">
-          <img src="img/img1.png" alt="кодинг" width="370" class="work-img" />
+          <img src="img/img1.png" alt="кодинг" width="360" class="work-img" />
         </li>
         <li class="work-item">
           <img
             src="img/img2.png"
             alt="маркетинг"
-            width="370"
+            width="360"
             class="work-img"
           />
         </li>
         <li class="work-item">
-          <img src="img/img3.png" alt="дизайн" width="370" class="work-img" />
+          <img src="img/img3.png" alt="дизайн" width="360" class="work-img" />
         </li>
       </ul>
     </section>
-    <section class="people">
+    <div>
+    <section class="people conteiner">
       <h2 class="people-tytle">Наша команда</h2>
-      <ul class="people-list">
+      <ul class="people-list conteiner">
         <li class="people-item">
           <img
             src="img/img4.jpg"
@@ -147,7 +153,8 @@
       </ul>
     </section>
     <footer class="footer">
-      <a href="#" class="footer-name"><span class="web">Web</span>Studio</a>
+      <div class="footer-wrap conteiner">
+        <a href="#" class="footer-name"><span class="web">Web</span>Studio</a>
       <ul class="footer-list">
         <li class="footer-item">
           <a href="#" class="footer-item-link-1"
@@ -165,6 +172,7 @@
           >
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>

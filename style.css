@@ -2,7 +2,16 @@ body {
     font-family: roboto;
 
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 a {
     color: black;
     text-decoration: none;
@@ -12,19 +21,22 @@ ul {
     list-style: none;
 }
 
-
+.conteiner{
+    margin: 0 auto;
+}
 
 /* ?==========main page========== */
 /* !==========header========== */
 .header{
     display: flex;
-    margin-left: 50px;
+    width: 1170px;
 }
 .header-name {
     font-size: 26px;
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 0.78px;
+    margin-top: 24px;
 }
 .web {
     color: #2196F3;
@@ -36,12 +48,13 @@ ul {
     letter-spacing: 0.28px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 32px;
 }
 .header-item:hover {
     color: #2196F3;
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.28px
+    letter-spacing: 0.28px;
 }
 
 .list-header-nav {
@@ -64,18 +77,24 @@ ul {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: 32px;
 }
 .contacts-list{
     display: flex;
+    padding-left: 322px; ;
+}
+.contacts-item:not(:first-child){
+    margin-left: 50px;
 }
 /* !==========banner========== */
 .banner {
     background-color: #2F303A;
-    padding: 200px 452px;
+    width: 1519px;
+    height: 600px;
 }
-
+.banner-wrap{
+    width: 1170px;
+}
 .banner-tytle {
     color: #FFF;
     text-align: center;
@@ -84,6 +103,7 @@ ul {
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    padding-top: 200px;
 }
 
 .banner-btn {
@@ -94,16 +114,33 @@ ul {
     letter-spacing: 0.96px;
     color: #FFF;
     background-color: #2196F3;
-    margin-left: 226px;
+    width: 216px;
+    height: 50px;
+    margin-left: 465px;
+    /* margin: 0px 692px; */
 }
 
 /* !==========specials========== */
+.specials{
+    width: 1170px;
+    margin-bottom: 118px;
+    margin-top: 94px;
+}
 .list-sp-tytle {
     color: #212121;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
+.specials-list{
+    display: flex;
+}
+.specials li{
+    width: 260px;
+}
+.specials li:not(:first-child){
+    margin-left: 30px;
 }
 
 .list-sp-text {
@@ -113,13 +150,11 @@ ul {
     line-height: 24px;
     letter-spacing: 0.42px;
 }
-.specials-list{
-    display: flex;
-    width: 1170px;
-    margin: 0 auto;
-}
 
 /* !==========work========== */
+.work{
+    width: 1170px;
+}
 .work-tytle {
     color: #212121;
         text-align: center;
@@ -128,25 +163,27 @@ ul {
 }
 .work-list{
     display: flex;
-    width: 1170px;
-    margin: 0 auto;
+}
+.work-item{
+    display: flex;
 }
 .work-img{
-    width: 370px;
+    width: 360px;
     height: 294px;
     box-sizing: border-box;
-    margin-left: 15px;
-    margin-right: 15px;
+}
+.work-item:not(:first-child){
+    margin-left: 30px;
 }
 /* !==========people========== */
 .people{
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 188px;
+    margin-bottom: 188px;
+    background: #F5F4FA;
 }
 .people-list{
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    width: 1170px;
 }
 .people-tytle {
     color: #212121;
@@ -183,6 +220,14 @@ ul {
     width: 1519px;
     height: 252px;
 }
+.footer-wrap{
+    width: 1170px;
+}
+.footer-list{
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
 .footer-name {
     color: #FFF;
@@ -190,6 +235,7 @@ ul {
     font-weight: 700;
     padding-top: 25px;
     padding-bottom: 15px;
+    font-size: 26px;
 }
 
 .footer-item-link {
@@ -210,9 +256,8 @@ ul {
 /* !==========header========== */
 
 /* !==========projects========== */
-.proj-tytle {
-    font-size: 94px;
-    line-height: 0;
+.projects{
+    width: 1170px;
 }
 .proj-btn {
     color: #212121;
@@ -221,15 +266,26 @@ ul {
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.48px;
+        display: inline-block; 
+        border-radius: 4px;
 }
 .proj-btn:hover{
-    color: #212121;
+    color: #FFF;
         text-align: center;
         font-size: 16px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.48px;
         background-color: #2196F3;
+}
+.proj-item-img{
+    width: 354px;
+}
+.proj-item{
+    display: inline-block;
+}
+.proj-item:not(:nth-child(3n+1)){
+    margin-left: 30px;
 }
 
 .proj-item-tytle {
