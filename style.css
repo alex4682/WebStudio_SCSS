@@ -19,37 +19,51 @@ a {
 ul {
   list-style: none;
 }
-
+/* 
 .conteiner {
   margin: 0 auto;
-}
+} */
 
 /* ?==========main page========== */
 /* !==========header========== */
 .header {
   display: flex;
-  width: 1170px;
+  justify-content: center;
+  padding-bottom: 32px;
 }
 .header-name {
   font-size: 26px;
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.78px;
-  margin-top: 24px;
+  margin-top: 32px;
+  margin-left: 111px;
+  display: flex;
 }
 .web {
   color: #2196f3;
 }
-.header-item {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
+.contacts-list {
+  margin-left: 251px;
+}
+.list-header-nav,
+.contacts-list {
+  display: flex;
+  justify-content: center;
+}
+.header-item,
+.contacts-item {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 32px;
 }
-.header-item:hover {
+.header-link {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+.header-item .header-link:hover {
   color: #2196f3;
   font-size: 14px;
   font-weight: 500;
@@ -61,38 +75,34 @@ ul {
   font-family: Roboto;
   font-weight: 500;
   letter-spacing: 0.28px;
-  display: flex;
 }
 
-.contacts-item:hover {
+.contacts-item .contacts-link:hover {
   color: #2196f3;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 
-.contacts-item {
+.contacts-link {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
   margin-top: 32px;
 }
-.contacts-list {
-  display: flex;
-  padding-left: 322px;
-}
-.contacts-item:not(:first-child) {
-  margin-left: 50px;
-}
 /* !==========banner========== */
 .banner {
   background-color: #2f303a;
-  width: 1519px;
   height: 600px;
+  display: flex;
+  justify-content: center;
 }
 .banner-wrap {
-  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .banner-tytle {
   color: #fff;
@@ -102,7 +112,6 @@ ul {
   line-height: 60px;
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  padding-top: 200px;
 }
 
 .banner-btn {
@@ -115,13 +124,10 @@ ul {
   background-color: #2196f3;
   width: 216px;
   height: 50px;
-  margin-left: 465px;
-  /* margin: 0px 692px; */
 }
 
 /* !==========specials========== */
 .specials {
-  width: 1170px;
   margin-bottom: 118px;
   margin-top: 94px;
 }
@@ -134,6 +140,7 @@ ul {
 }
 .specials-list {
   display: flex;
+  justify-content: center;
 }
 .specials li {
   width: 260px;
@@ -152,7 +159,8 @@ ul {
 
 /* !==========work========== */
 .work {
-  width: 1170px;
+  display: flex;
+  flex-direction: column;
 }
 .work-tytle {
   color: #212121;
@@ -162,9 +170,7 @@ ul {
 }
 .work-list {
   display: flex;
-}
-.work-item {
-  display: flex;
+  justify-content: center;
 }
 .work-img {
   width: 360px;
@@ -176,13 +182,14 @@ ul {
 }
 /* !==========people========== */
 .people {
-  margin-top: 188px;
-  margin-bottom: 188px;
+  margin-top: 94px;
+  padding-top: 94px;
   background: #f5f4fa;
+  padding-bottom: 188px;
 }
 .people-list {
   display: flex;
-  width: 1170px;
+  justify-content: center;
 }
 .people-tytle {
   color: #212121;
@@ -216,11 +223,14 @@ ul {
 /* !==========footer========== */
 .footer {
   background-color: #2f303a;
-  width: 1519px;
   height: 252px;
+  display: flex;
+  justify-content: center;
 }
 .footer-wrap {
   width: 1170px;
+  display: flex;
+  flex-direction: column;
 }
 .footer-list {
   height: 60px;
@@ -232,8 +242,7 @@ ul {
   color: #fff;
   font-family: raleway;
   font-weight: 700;
-  padding-top: 25px;
-  padding-bottom: 15px;
+  margin-top: 60px;
   font-size: 26px;
 }
 
@@ -255,9 +264,6 @@ ul {
 /* !==========header========== */
 
 /* !==========projects========== */
-.projects {
-  width: 1170px;
-}
 .proj-list-btn {
   display: flex;
   justify-content: center;
@@ -287,10 +293,12 @@ ul {
   background-color: #2196f3;
 }
 .proj-item-img {
-  width: 354px;
+  width: 3560x;
 }
-.proj-item {
-  display: inline-block;
+.proj-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .proj-item:not(:nth-child(3n + 1)) {
   margin-left: 30px;
