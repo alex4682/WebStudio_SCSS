@@ -30,15 +30,16 @@ ul {
   display: flex;
   justify-content: center;
   padding-bottom: 32px;
+  align-items: center;
 }
 .header-name {
   font-size: 26px;
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.78px;
-  margin-top: 32px;
   margin-left: 111px;
   display: flex;
+  padding-top: 30px;
 }
 .web {
   color: #2196f3;
