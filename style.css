@@ -285,6 +285,7 @@ ul {
   margin: 8px;
   width: 112px;
   height: 38px;
+  border: none;
 }
 .proj-btn:hover {
   color: #fff;
