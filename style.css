@@ -1,6 +1,11 @@
 body {
   font-family: roboto;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -31,7 +36,8 @@ ul {
 .header {
   display: flex;
   justify-content: center;
-  padding-bottom: 32px;
+  gap: 0px 90px;
+  height: 80px;
   align-items: center;
 }
 .header-name {
@@ -39,26 +45,23 @@ ul {
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.78px;
-  margin-left: 111px;
-  display: flex;
-  padding-top: 30px;
 }
 .web {
   color: #2196f3;
 }
-.contacts-list {
-  margin-left: 251px;
-}
-.list-header-nav,
+
 .contacts-list {
   display: flex;
   justify-content: center;
+  align-self: center;
 }
-.header-item,
-.contacts-item {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 32px;
+.list-header-nav,
+.contacts-list {
+  gap: 0px 34px;
+}
+.header-wrap {
+  display: flex;
+  gap: 0px 320px;
 }
 .header-link {
   color: #212121;
@@ -78,6 +81,7 @@ ul {
   font-family: Roboto;
   font-weight: 500;
   letter-spacing: 0.28px;
+  display: flex;
 }
 
 .contacts-item .contacts-link:hover {
@@ -115,6 +119,7 @@ ul {
   line-height: 60px;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .banner-btn {
@@ -144,12 +149,10 @@ ul {
 .specials-list {
   display: flex;
   justify-content: center;
+  gap: 0px 30px;
 }
 .specials li {
   width: 260px;
-}
-.specials li:not(:first-child) {
-  margin-left: 30px;
 }
 
 .list-sp-text {
@@ -174,14 +177,12 @@ ul {
 .work-list {
   display: flex;
   justify-content: center;
+  gap: 0px 30px;
 }
 .work-img {
   width: 360px;
   height: 294px;
   box-sizing: border-box;
-}
-.work-item:not(:first-child) {
-  margin-left: 30px;
 }
 /* !==========people========== */
 .people {
@@ -193,6 +194,7 @@ ul {
 .people-list {
   display: flex;
   justify-content: center;
+  gap: 0px 25px;
 }
 .people-tytle {
   color: #212121;
@@ -219,8 +221,6 @@ ul {
   box-sizing: border-box;
   width: 270px;
   height: 260px;
-  margin-left: 25px;
-  margin-right: 25px;
 }
 
 /* !==========footer========== */
@@ -231,14 +231,15 @@ ul {
   justify-content: center;
 }
 .footer-wrap {
-  width: 1170px;
+  /* width: 1170px; */
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .footer-list {
   height: 60px;
-  margin-top: 20px;
   margin-bottom: 60px;
+  gap: 10px;
 }
 
 .footer-name {
@@ -303,7 +304,8 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px 30px;
+  gap: 30px;
+  width: calc((100% - 3 * 30) / 3);
 }
 
 .proj-item-tytle {
