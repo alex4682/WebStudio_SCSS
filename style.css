@@ -162,6 +162,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  margin-bottom: 8%;
+  border-radius: 4px;
 }
 
 .clock::before {
@@ -173,6 +175,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  margin-bottom: 8%;
+  border-radius: 4px;
 }
 
 .vector::before {
@@ -184,6 +188,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  margin-bottom: 8%;
+  border-radius: 4px;
 }
 
 .astronaut::before {
@@ -195,6 +201,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
+  margin-bottom: 8%;
+  border-radius: 4px;
 }
 
 .list-sp-text {
