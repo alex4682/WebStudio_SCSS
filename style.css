@@ -97,6 +97,9 @@ ul {
 /* !==========banner========== */
 .banner {
   background-color: #2f303a;
+  background-image: url(img/img_bg.jpg);
+  background-size: 100vw 85vh;
+  background-repeat: no-repeat;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -128,6 +131,7 @@ ul {
   background-color: #2196f3;
   width: 216px;
   height: 50px;
+  border: none;
 }
 
 /* !==========specials========== */
@@ -158,7 +162,7 @@ ul {
   width: 100%;
   height: 17vh;
   display: block;
-  background-image: url(img/antenna\ 1.png);
+  background-image: url(img/antenna_1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -171,7 +175,7 @@ ul {
   width: 100%;
   height: 17vh;
   display: block;
-  background-image: url(img/clock\ 1.png);
+  background-image: url(img/clock_1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -184,7 +188,7 @@ ul {
   width: 100%;
   height: 17vh;
   display: block;
-  background-image: url(img/Vector.png);
+  background-image: url(img/diagram_1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -197,7 +201,7 @@ ul {
   width: 100%;
   height: 17vh;
   display: block;
-  background-image: url(img/astronaut\ 1.png);
+  background-image: url(img/astronaut_1.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -246,6 +250,11 @@ ul {
   justify-content: center;
   gap: 0px 25px;
 }
+.people-item {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
 .people-tytle {
   color: #212121;
   text-align: center;
@@ -269,19 +278,16 @@ ul {
 }
 .people-item {
   box-sizing: border-box;
-  width: 270px;
-  height: 260px;
 }
 
 /* !==========footer========== */
 .footer {
   background-color: #2f303a;
-  height: 252px;
+  height: 33vh;
   display: flex;
   justify-content: center;
 }
 .footer-wrap {
-  /* width: 1170px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -317,12 +323,16 @@ ul {
 /* ?==========portfolio========== */
 /* !==========header========== */
 
+.port-wrap {
+  border: 1px solid #ececec;
+}
 /* !==========projects========== */
 .proj-list-btn {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 50px;
+  margin-top: 12vh;
+  margin-bottom: 10vh;
 }
 .proj-btn {
   color: #212121;
@@ -347,8 +357,15 @@ ul {
   letter-spacing: 0.48px;
   background-color: #2196f3;
 }
+.proj-item {
+  display: flex;
+  flex-direction: column;
+}
 .proj-item-img {
   width: 356px;
+}
+.proj-item:nth-child(1n + 7) {
+  margin-bottom: 13vh;
 }
 .proj-list {
   display: flex;
@@ -356,6 +373,11 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
   width: calc((100% - 3 * 30) / 3);
+}
+
+.proj-item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .proj-item-tytle {
@@ -372,4 +394,8 @@ ul {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.48px;
+}
+.proj-item-text,
+.proj-item-tytle {
+  padding-left: 6%;
 }
