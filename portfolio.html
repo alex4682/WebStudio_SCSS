@@ -38,11 +38,23 @@
           </nav>
           <ul class="contacts-list">
             <li class="contacts-item">
+              <svg class="phone-header" width="16" height="12">
+                <use
+                  class="phone-use"
+                  href="img/symbol-defs.svg#icon-mail"
+                ></use>
+              </svg>
               <a href="mailto:info@devstudio.com" class="contacts-link">
                 info@devstudio.com</a
               >
             </li>
             <li class="contacts-item">
+              <svg class="phone-header" width="10" height="16">
+                <use
+                  class="phone-use"
+                  href="img/symbol-defs.svg#icon-smartphone"
+                ></use>
+              </svg>
               <a href="tell:+380961111111" class="contacts-link"
                 >+38 096 111 11 11</a
               >
@@ -51,125 +63,170 @@
         </div>
       </header>
     </div>
-    <section class="projects conteiner">
-      <h1 class="proj-tytle visually-hidden">фільтри</h1>
-      <ul class="proj-list-btn">
-        <li class="proj-item-btn">
-          <button type="button" class="proj-btn">Усі</button>
-        </li>
-        <li class="proj-item-btn">
-          <button type="button" class="proj-btn">Веб-сайти</button>
-        </li>
-        <li class="proj-item-btn">
-          <button type="button" class="proj-btn">Додатки</button>
-        </li>
-        <li class="proj-item-btn">
-          <button type="button" class="proj-btn">Дизайн</button>
-        </li>
-        <li class="proj-item-btn">
-          <button type="button" class="proj-btn">Маркетинг</button>
-        </li>
-      </ul>
-      <ul class="proj-list">
-        <li class="proj-item">
-          <img src="img/img_port.1.jpg" alt="Технокря" class="proj-item-img" />
-          <h2 class="proj-item-tytle">Технокряк</h2>
-          <p class="proj-item-text">Веб-сайт</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.2.jpg"
-            alt="Постер New Orlean vs Golden Star"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Постер New Orlean vs Golden Star</h2>
-          <p class="proj-item-text">Дизайн</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.3.jpg"
-            alt="Ресторан Seafood"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Ресторан Seafood</h2>
-          <p class="proj-item-text">Додаток</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.4.jpg"
-            alt="Проєкт Prime"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Проєкт Prime</h2>
-          <p class="proj-item-text">Маркетинг</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.5.jpg"
-            alt="Проєкт Boxes"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Проєкт Boxes</h2>
-          <p class="proj-item-text">Додаток</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.6.jpg"
-            alt="Inspiration has no Borders"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Inspiration has no Borders</h2>
-          <p class="proj-item-text">Веб-сайт</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.7.jpg"
-            alt="Видання Limited Edition"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Видання Limited Edition</h2>
-          <p class="proj-item-text">Дизайн</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.8.jpg"
-            alt="Проєкт LAB"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Проєкт LAB</h2>
-          <p class="proj-item-text">Маркетинг</p>
-        </li>
-        <li class="proj-item">
-          <img
-            src="img/img_port.9.jpg"
-            alt="Growing Business"
-            class="proj-item-img"
-          />
-          <h2 class="proj-item-tytle">Growing Business</h2>
-          <p class="proj-item-text">Додаток</p>
-        </li>
-      </ul>
-    </section>
-    <footer class="footer">
-      <div class="footer-wrap conteiner">
-        <a href="#" class="footer-name"><span class="web">Web</span>Studio</a>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a href="#" class="footer-item-link-1"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
+    <main>
+      <section class="projects conteiner">
+        <h1 class="proj-tytle visually-hidden">фільтри</h1>
+        <ul class="proj-list-btn">
+          <li class="proj-item-btn">
+            <button type="button" class="proj-btn">Усі</button>
           </li>
-          <li class="footer-item">
-            <a href="mailto:info@devstudio.com" class="footer-item-link"
-              >info@devstudio.com</a
-            >
+          <li class="proj-item-btn">
+            <button type="button" class="proj-btn">Веб-сайти</button>
           </li>
-          <li class="footer-item">
-            <a href="tell:+380961111111" class="footer-item-link"
-              >+38 096 111 11 11</a
-            >
+          <li class="proj-item-btn">
+            <button type="button" class="proj-btn">Додатки</button>
+          </li>
+          <li class="proj-item-btn">
+            <button type="button" class="proj-btn">Дизайн</button>
+          </li>
+          <li class="proj-item-btn">
+            <button type="button" class="proj-btn">Маркетинг</button>
           </li>
         </ul>
+        <ul class="proj-list">
+          <li class="proj-item">
+            <img
+              src="img/img_port.1.jpg"
+              alt="Технокря"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Технокряк</h2>
+            <p class="proj-item-text">Веб-сайт</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.2.jpg"
+              alt="Постер New Orlean vs Golden Star"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Постер New Orlean vs Golden Star</h2>
+            <p class="proj-item-text">Дизайн</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.3.jpg"
+              alt="Ресторан Seafood"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Ресторан Seafood</h2>
+            <p class="proj-item-text">Додаток</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.4.jpg"
+              alt="Проєкт Prime"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Проєкт Prime</h2>
+            <p class="proj-item-text">Маркетинг</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.5.jpg"
+              alt="Проєкт Boxes"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Проєкт Boxes</h2>
+            <p class="proj-item-text">Додаток</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.6.jpg"
+              alt="Inspiration has no Borders"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Inspiration has no Borders</h2>
+            <p class="proj-item-text">Веб-сайт</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.7.jpg"
+              alt="Видання Limited Edition"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Видання Limited Edition</h2>
+            <p class="proj-item-text">Дизайн</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.8.jpg"
+              alt="Проєкт LAB"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Проєкт LAB</h2>
+            <p class="proj-item-text">Маркетинг</p>
+          </li>
+          <li class="proj-item">
+            <img
+              src="img/img_port.9.jpg"
+              alt="Growing Business"
+              class="proj-item-img"
+            />
+            <h2 class="proj-item-tytle">Growing Business</h2>
+            <p class="proj-item-text">Додаток</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrap conteiner">
+        <div class="footer-contacts-wrap">
+          <a href="#" class="footer-name"><span class="web">Web</span>Studio</a>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-item-link"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="mailto:info@devstudio.com" class="footer-item-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="tell:+380961111111" class="footer-item-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-wrap">
+          <h4 class="footer-social-tytle">приєднуйтесь</h4>
+          <div class="social-wrap">
+            <div class="social-bg">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use
+                  class="footer-social"
+                  href="img/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </div>
+            <div class="social-bg">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use
+                  class="footer-social"
+                  href="img/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </div>
+            <div class="social-bg">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use
+                  class="footer-social"
+                  href="img/symbol-defs.svg#icon-facebook"
+                ></use>
+              </svg>
+            </div>
+            <div class="social-bg">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use
+                  class="footer-social"
+                  href="img/symbol-defs.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
