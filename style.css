@@ -255,6 +255,7 @@ ul {
 .people-svg-wrap {
   display: flex;
   justify-content: space-evenly;
+  padding: 0 30px;
 }
 .svg-hover {
   padding: 15px 15px;
