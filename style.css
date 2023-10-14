@@ -254,12 +254,14 @@ ul {
 }
 .people-svg-wrap {
   display: flex;
-  gap: 0 20px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .svg-hover {
   padding: 15px 15px;
-  border-radius: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .svg-hover:hover {
   background-color: #2196f3;
@@ -378,7 +380,7 @@ ul {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
