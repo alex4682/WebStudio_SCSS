@@ -100,6 +100,131 @@ ul {
   margin-top: 32px;
 }
 /* !==========banner========== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.modal {
+  width: 528px;
+  height: 630px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+.modal-close {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  margin: 8px 8px 0 0;
+}
+.modal-close:hover .modal-close-svg {
+  fill: #2196f3;
+  transition: ease 0.5s;
+}
+.modal-close-svg {
+  margin: 5px 0 0 0;
+}
+.modal-svg {
+  margin: 9px 12px 0 12px;
+}
+.modal-text {
+  color: #212121;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: 40px;
+}
+.modal-form {
+  margin-left: 40px;
+  width: 448px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.modal-label:not(:last-child) {
+  margin-bottom: 28px;
+}
+.modal-text-input {
+  width: 448px;
+  height: 120px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.modal-checkbox {
+  display: flex;
+}
+.checkbox-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.checkbox-text {
+  color: rgba(117, 117, 117, 1);
+  margin-left: 5px;
+}
+.modal-input {
+  border: none;
+  outline: none;
+  width: 380px;
+  height: 40px;
+}
+.modal-label:focus-within .modal-svg {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  border-radius: 4px;
+  fill: #2196f3;
+}
+.modal-label:focus-within {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  border-radius: 4px;
+  outline: 1px solid #2196f3;
+}
+.modal-label {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+}
+.modal-send {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 187.5%;
+  letter-spacing: 0.96px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  align-self: center;
+  border: none;
+}
 .banner {
   background-color: #2f303a;
   background-image: url(img/img_bg.jpg),
