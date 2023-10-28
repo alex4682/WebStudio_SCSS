@@ -108,7 +108,12 @@
                       height="18"
                     ></use>
                   </svg>
-                  <input type="text" name="tell" class="modal-input" required />
+                  <input
+                    type="number"
+                    name="tell"
+                    class="modal-input"
+                    required
+                  />
                 </label>
                 Пошта
                 <label class="modal-label">
@@ -540,6 +545,24 @@
               </svg>
             </div>
           </div>
+        </div>
+        <div class="footer-join-wrap">
+          <h4 class="footer-social-tytle"">Підпишіться на розсилку</h4>
+          <form>
+            <label class="footer-mail-label">
+              <input type="text" name="mail" placeholder="E-mail" required />
+            </label>
+            <button class="join-btn" type="submit">
+              Підписатися
+              <svg class="join-svg" width="24" height="24">
+                <use
+                  href="img/symbol-defs.svg#icon-send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
