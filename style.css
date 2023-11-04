@@ -29,25 +29,15 @@ ul {
 }
 
 /* ?==========main page========== */
-.active-port::after {
-  content: "";
-  border-radius: 2px;
-  background: #2196f3;
-  width: 78px;
-  height: 4px;
-  position: absolute;
-  top: 46px;
-  right: -4px;
-}
 .active::after {
   content: "";
   border-radius: 2px;
   background: #2196f3;
-  width: 48px;
+  width: 100%;
   height: 4px;
   position: absolute;
   top: 46px;
-  right: -4px;
+  right: 0;
 }
 /* !==========header========== */
 .header {
