@@ -29,6 +29,7 @@ ul {
 }
 
 /* ?==========main page========== */
+
 .active::after {
   content: "";
   border-radius: 2px;
@@ -38,6 +39,7 @@ ul {
   position: absolute;
   top: 46px;
   right: 0;
+  display: inline-block;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 /* !==========header========== */
@@ -146,6 +148,47 @@ ul {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   position: relative;
+  transform: scaleY(0.25);
+}
+.modal.close {
+  animation-name: modalClose;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+}
+.modal.open {
+  animation-name: modalOpen;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: both;
+}
+@keyframes modalClose {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(0.75);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(0.25);
+  }
+}
+@keyframes modalOpen {
+  0% {
+    transform: scaleY(0.25);
+  }
+  25% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(0.75);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 .modal-close {
   border-radius: 50%;
@@ -641,7 +684,6 @@ footer form {
 .box:hover .overlay {
   transform: translateY(0);
 }
-
 /* !==========header=========== */
 
 .port-wrap {
