@@ -20,12 +20,13 @@
   function toggleModalOpen() {
     document.body.classList.toggle("no-scroll");
     refs.modal.classList.toggle("is-hidden");
-    open.modal.classList.toggle("open");
+    open.modal.classList.add("open");
+    close.modal.classList.remove("close");
   }
   function toggleModalClose() {
     document.body.classList.toggle("no-scroll");
     refs.modal.classList.toggle("is-hidden");
-    open.modal.classList.toggle("open");
-    close.modal.classList.toggle("close");
+    open.modal.classList.remove("open");
+    close.modal.classList.add("close");
   }
 })();
