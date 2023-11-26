@@ -1,0 +1,103 @@
+.active::after {
+  content: "";
+  border-radius: 2px;
+  background: #2196f3;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 46px;
+  right: 0;
+  display: inline-block;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 0px 90px;
+  height: 80px;
+  align-items: center;
+}
+
+.header-name {
+  font-size: 26px;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+
+  &:hover {
+      animation: pulse 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+
+.web {
+  color: #2196f3;
+}
+
+.phone-header {
+  margin-right: 10px;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.list-header-nav,
+.contacts-list {
+  gap: 0px 34px;
+}
+
+.header-wrap {
+  display: flex;
+  gap: 0px 320px;
+}
+
+.header-link {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+}
+
+.header-item {
+  position: relative;
+
+  &:hover .header-link {
+      color: #2196f3;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+}
+
+.list-header-nav {
+  font-size: 14px;
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  display: flex;
+}
+.contacts-item{
+  &:hover .phone-use {
+      fill: #2196f3;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+  &:hover .contacts-link {
+    color: #2196f3;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+.contacts-link {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  margin-top: 32px;
+}

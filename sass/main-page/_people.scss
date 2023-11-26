@@ -1,0 +1,87 @@
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: rgb(176, 216, 248);
+  }
+
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.people {
+  margin-top: 94px;
+  padding-top: 94px;
+  background: #f5f4fa;
+  padding-bottom: 188px;
+}
+
+.people-list {
+  display: flex;
+  justify-content: center;
+  gap: 0px 25px;
+}
+
+.people-item {
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  width: 270px;
+  height: 428px;
+}
+
+.people-tytle {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+
+.list-people-name {
+  color: #212121;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+
+.list-people-job {
+  color: #757575;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.people-item {
+  box-sizing: border-box;
+}
+
+.people-svg-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 30px;
+}
+
+.svg-hover {
+  padding: 15px 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover .people-use {
+      fill: rgba(255, 255, 255, 1);
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
+  &:hover {
+    background-color: #2196f3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+}
+.people-use {
+  fill: rgba(175, 177, 184, 1);
+}

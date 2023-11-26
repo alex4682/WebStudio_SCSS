@@ -1,0 +1,110 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 69%;
+  transform: translateY(-100%);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms transform;
+  background: rgba(33, 150, 243, 0.85);
+  display: flex;
+  align-items: center;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155.556%;
+  letter-spacing: 0.54px;
+  margin: 40px;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  &:hover .overlay {
+      transform: translateY(0);
+    }
+}
+
+.port-wrap {
+  border: 1px solid #ececec;
+}
+.projects{
+  margin-bottom: 94px;
+}
+.proj-list-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 12vh;
+  margin-bottom: 10vh;
+}
+
+.proj-btn {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 8px;
+  width: 112px;
+  height: 38px;
+  border: none;
+  &:hover {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0.48px;
+      background-color: #2196f3;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+      animation: scale 300ms cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+}
+
+.proj-item {
+  display: flex;
+  flex-direction: column;
+  &:hover {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+      transition: ease-out 300ms;
+    }
+}
+
+.proj-item-img {
+  width: 356px;
+}
+
+.proj-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.proj-item-tytle {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+}
+
+.proj-item-text {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+
+.proj-item-text,
+.proj-item-tytle {
+  padding-left: 6%;
+}
