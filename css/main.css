@@ -133,7 +133,7 @@ ul {
 
 .banner {
   background-color: #2f303a;
-  background-image: url(../../img/img_bg.jpg), radial-gradient(circle, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%);
+  background-image: url(../img/img_bg.jpg), radial-gradient(circle, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%);
   background-size: 100vw 85vh;
   background-repeat: no-repeat;
   height: 600px;
