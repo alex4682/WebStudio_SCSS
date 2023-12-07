@@ -1,10 +1,11 @@
 @import "./base/reset";
+@import "./utils/variables";
 @import "./layout/header";
-@import "./main-page/_banner";
-@import "./main-page/_modal";
-@import "./main-page/_specials";
-@import "./main-page/_work";
-@import "./main-page/_people";
-@import "./main-page/_clients";
+@import "./main-page/banner";
+@import "./main-page/modal";
+@import "./main-page/specials";
+@import "./main-page/work";
+@import "./main-page/people";
+@import "./main-page/clients";
 @import "./layout/footer";
 @import "./portfolio-page/portfolio";

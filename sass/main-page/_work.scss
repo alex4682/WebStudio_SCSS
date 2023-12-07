@@ -4,7 +4,7 @@
 }
 
 .work-tytle {
-  color: #212121;
+  color: $blackColor;
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
@@ -40,7 +40,7 @@
 }
 
 .work-text {
-  color: #fff;
+  color: $whiteColor;
   text-align: center;
   font-size: 14px;
   font-style: normal;

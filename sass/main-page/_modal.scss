@@ -25,7 +25,7 @@
   width: 528px;
   height: 630px;
   border-radius: 4px;
-  background: #fff;
+  background: $whiteColor;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transform: scaleY(0.25);
@@ -87,14 +87,14 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: $whiteColor;
   margin: 8px 8px 0 0;
   padding: 6px 7px 7px 6px;
   align-self: end;
   display: flex;
   align-items: center;
   &:hover .modal-close-svg {
-      fill: #2196f3;
+      fill: $secondaryColor;
       transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
       animation: heartBeat 2s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -107,7 +107,7 @@
 }
 
 .modal-text {
-  color: #212121;
+  color: $blackColor;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
@@ -135,7 +135,7 @@
 }
 
 .checkbox-link {
-  color: #2196f3;
+  color: $secondaryColor;
   text-decoration: underline;
 }
 
@@ -165,13 +165,13 @@
       animation-name: fadeIn;
       animation-duration: 0.5s;
       border-radius: 4px;
-      outline: 1px solid #2196f3;
+      outline: 1px solid $secondaryColor;
     }
     &:focus-within .modal-svg {
       animation-name: fadeIn;
       animation-duration: 0.5s;
       border-radius: 4px;
-      fill: #2196f3;
+      fill: $secondaryColor;
       animation: heartBeat 2s cubic-bezier(0.4, 0, 0.2, 1);
     }
   &:not(:last-child) {
@@ -180,7 +180,7 @@
 }
 
 .modal-send {
-  color: #fff;
+  color: $whiteColor;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -189,7 +189,7 @@
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: $secondaryColor;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   align-self: center;
   border: none;
