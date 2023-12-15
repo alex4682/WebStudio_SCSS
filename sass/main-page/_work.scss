@@ -4,9 +4,7 @@
 }
 
 .work-tytle {
-  color: $blackColor;
-  text-align: center;
-  font-size: 36px;
+  @include title($blackColor, 36px, normal, 700);
   letter-spacing: 1.08px;
 }
 

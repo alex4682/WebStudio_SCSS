@@ -1,9 +1,11 @@
 .banner {
   background-color: #2f303a;
   background-image: url(../img/img_bg.jpg),
-    radial-gradient(circle,
+    radial-gradient(
+      circle,
       rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%);
+      rgba(47, 48, 58, 0.4) 100%
+    );
   background-size: 100vw 85vh;
   background-repeat: no-repeat;
   height: 600px;
@@ -19,29 +21,18 @@
 }
 
 .banner-tytle {
-  color: $whiteColor;
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
+  @include title($whiteColor, 44px, 1.36, 900);
   letter-spacing: 2.64px;
   text-transform: uppercase;
   align-self: center;
 }
 
 .banner-btn {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  color: $whiteColor;
-  background-color: $secondaryColor;
+  @extend %btn;
   width: 216px;
   height: 50px;
-  border: none;
 
-  &:hover{
+  &:hover {
     animation: heartBeat 2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

@@ -3,10 +3,7 @@
 }
 
 .clients-tytle {
-  color: $blackColor;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
+  @include title($blackColor, 36px, normal, 700);
   letter-spacing: 1.08px;
 }
 
@@ -29,14 +26,14 @@
   justify-content: center;
   align-items: center;
   &:hover .clients-use {
-      fill: $secondaryColor;
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    }
+    fill: $secondaryColor;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   &:hover {
-      border: 1px solid $secondaryColor;
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-      animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
-    }
+    border: 1px solid $secondaryColor;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
 }
 
 .clients-use {
