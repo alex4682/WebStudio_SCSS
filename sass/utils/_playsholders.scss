@@ -8,3 +8,12 @@
   letter-spacing: 0.96px;
   border: none;
 }
+%conteiner {
+  width: 100vw;
+  @media screen and (max-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

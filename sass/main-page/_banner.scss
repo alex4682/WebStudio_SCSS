@@ -1,30 +1,22 @@
 .banner {
-  background-color: #2f303a;
-  background-image: url(../img/img_bg.jpg),
-    radial-gradient(
-      circle,
-      rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    );
-  background-size: 100vw 85vh;
+  @extend %conteiner;
+  width: 100%;
+  background-image: url(../img/img_bg.jpg);
+  background-size: 100vw 95vh;
   background-repeat: no-repeat;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-}
-
-.banner-wrap {
+  height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
 .banner-tytle {
-  @include title($whiteColor, 44px, 1.36, 900);
+  @include title($whiteColor, 26px, 1.36, 900);
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  align-self: center;
+  width: 80vw;
+  text-align: center;
+  margin-left: 30px;
 }
 
 .banner-btn {
