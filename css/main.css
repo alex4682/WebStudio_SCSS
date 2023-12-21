@@ -9,16 +9,16 @@
   border: none;
 }
 
-.specials, .banner, .header, main, body {
+.footer, .clients, .specials, .banner, .header, main, body {
   width: 100vw;
 }
 @media screen and (max-width: 768px) {
-  .specials, .banner, .header, main, body {
+  .footer, .clients, .specials, .banner, .header, main, body {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .specials, .banner, .header, main, body {
+  .footer, .clients, .specials, .banner, .header, main, body {
     width: 1200px;
   }
 }
@@ -194,7 +194,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -214,8 +214,8 @@ ul {
 }
 
 .modal {
-  width: 528px;
-  height: 630px;
+  width: 95vw;
+  height: 610px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -250,14 +250,6 @@ ul {
   display: flex;
   align-items: center;
 }
-.modal-close:hover .modal-close-svg {
-  fill: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  animation: heartBeat 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close:hover {
-  animation: heartBeat 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal-svg {
   margin: 9px 12px 0 12px;
@@ -273,14 +265,14 @@ ul {
 }
 
 .modal-form {
-  width: 448px;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
 .modal-text-input {
-  width: 448px;
+  width: 80%;
   height: 120px;
   outline: none;
   border-radius: 4px;
@@ -342,9 +334,6 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   align-self: center;
-}
-.modal-send:hover {
-  animation: flash 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .specials {
@@ -449,15 +438,24 @@ ul {
 
 .people-list {
   display: flex;
-  justify-content: center;
-  gap: 0px 25px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 90%;
+}
+
+.people-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .people-item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #fff;
-  width: 270px;
+  width: 100%;
   height: 428px;
+  gap: 30px;
 }
 
 .people-tytle {
@@ -467,6 +465,8 @@ ul {
   font-weight: 700;
   text-align: center;
   letter-spacing: 1.08px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .list-people-name {
@@ -477,16 +477,16 @@ ul {
   letter-spacing: 0.48px;
 }
 
+.list-people-image {
+  width: 100%;
+}
+
 .list-people-job {
   color: #757575;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
-}
-
-.people-item {
-  box-sizing: border-box;
 }
 
 .people-svg-wrap {
@@ -502,22 +502,15 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.svg-hover:hover .people-use {
-  fill: #fff;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.svg-hover:hover {
-  background-color: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
-}
 
 .people-use {
   fill: rgb(175, 177, 184);
 }
 
 .clients {
-  margin-bottom: 92px;
+  width: 100vw;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 .clients-tytle {
@@ -527,6 +520,8 @@ ul {
   font-weight: 700;
   text-align: center;
   letter-spacing: 1.08px;
+  margin-bottom: 30px;
+  margin-top: 60px;
 }
 
 .clients-svg {
@@ -536,26 +531,19 @@ ul {
 
 .clients-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-item {
   display: flex;
-  width: 170px;
+  width: 40vw;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   justify-content: center;
   align-items: center;
-}
-.clients-item:hover .clients-use {
-  fill: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.clients-item:hover {
-  border: 1px solid #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 .clients-use {
@@ -564,21 +552,21 @@ ul {
 
 .footer {
   background-color: #2F303A;
-  height: 33vh;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .footer-wrap {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 0 70px;
+  flex-direction: column;
   align-items: center;
+  gap: 0 70px;
 }
 
 .footer-contacts-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 272px;
 }
 
@@ -586,6 +574,9 @@ ul {
   height: 60px;
   margin-bottom: 60px;
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-name {
@@ -594,9 +585,7 @@ ul {
   font-weight: 700;
   margin-top: 60px;
   font-size: 26px;
-}
-.footer-name:hover {
-  animation: pulse 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
 }
 
 .footer-item-link {
@@ -605,19 +594,13 @@ ul {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
-}
-.footer-item-link:hover {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  text-align: center;
 }
 
 .footer-social-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -627,6 +610,8 @@ ul {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-main-wrap {
@@ -647,14 +632,16 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.social-bg:hover {
-  background-color: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
-}
 
 .footer-social {
   fill: #fff;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer-join-wrap {
@@ -671,15 +658,6 @@ ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-.join-btn:hover .join-svg {
-  fill: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-.join-btn:hover {
-  background-color: #fff;
-  color: #2196F3;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 footer form {

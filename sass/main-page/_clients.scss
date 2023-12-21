@@ -1,10 +1,15 @@
 .clients {
-  margin-bottom: 92px;
+  @extend %conteiner;
+  width: 100vw;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 .clients-tytle {
   @include title($blackColor, 36px, normal, 700);
   letter-spacing: 1.08px;
+  margin-bottom: 30px;
+  margin-top: 60px;
 }
 
 .clients-svg {
@@ -14,26 +19,28 @@
 
 .clients-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-item {
   display: flex;
-  width: 170px;
+  width: 40vw;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   justify-content: center;
   align-items: center;
-  &:hover .clients-use {
-    fill: $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
-  &:hover {
-    border: 1px solid $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
-  }
+  // &:hover .clients-use {
+  //   fill: $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  // }
+  // &:hover {
+  //   border: 1px solid $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  //   animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  // }
 }
 
 .clients-use {

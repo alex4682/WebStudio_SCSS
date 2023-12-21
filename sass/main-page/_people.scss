@@ -7,21 +7,30 @@
 
 .people-list {
   display: flex;
-  justify-content: center;
-  gap: 0px 25px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 90%;
 }
-
+.people-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .people-item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: $whiteColor;
-  width: 270px;
+  width: 100%;
   height: 428px;
+  gap: 30px;
 }
 
 .people-tytle {
   @include title($blackColor, 36px, normal, 700);
   letter-spacing: 1.08px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .list-people-name {
@@ -31,17 +40,15 @@
   font-size: 16px;
   letter-spacing: 0.48px;
 }
-
+.list-people-image {
+  width: 100%;
+}
 .list-people-job {
   color: $grayColor;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.48px;
-}
-
-.people-item {
-  box-sizing: border-box;
 }
 
 .people-svg-wrap {
@@ -56,15 +63,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover .people-use {
-      fill: $whiteColor;
-      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    }
-  &:hover {
-    background-color: $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
-  }
+  // &:hover .people-use {
+  //   fill: $whiteColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  // }
+  // &:hover {
+  //   background-color: $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  //   animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  // }
 }
 .people-use {
   fill: rgba(175, 177, 184, 1);

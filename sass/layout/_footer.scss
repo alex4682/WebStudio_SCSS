@@ -1,20 +1,21 @@
 .footer {
+  @extend %conteiner;
   background-color: $mainColor;
-  height: 33vh;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .footer-wrap {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 0 70px;
+  flex-direction: column;
   align-items: center;
+  gap: 0 70px;
 }
 
 .footer-contacts-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 272px;
 }
 
@@ -22,6 +23,9 @@
   height: 60px;
   margin-bottom: 60px;
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-name {
@@ -30,9 +34,10 @@
   font-weight: 700;
   margin-top: 60px;
   font-size: 26px;
-  &:hover {
-    animation: pulse 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  text-align: center;
+  // &:hover {
+  //   animation: pulse 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  // }
 }
 
 .footer-item-link {
@@ -41,19 +46,21 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
-  &:hover {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
+  text-align: center;
+  // &:hover {
+  //   color: #fff;
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   line-height: 24px;
+  //   letter-spacing: 0.42px;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  // }
 }
 
 .footer-social-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -63,6 +70,8 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .footer-main-wrap {
@@ -82,17 +91,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
-    background-color: $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
-  }
+  // &:hover {
+  //   background-color: $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  //   animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
+  // }
 }
 
 .footer-social {
   fill: $whiteColor;
 }
-
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 .footer-join-wrap {
   display: flex;
   flex-direction: column;
@@ -108,15 +122,15 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  &:hover .join-svg {
-    fill: $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
-  &:hover {
-    background-color: #fff;
-    color: $secondaryColor;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
+  // &:hover .join-svg {
+  //   fill: $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  // }
+  // &:hover {
+  //   background-color: #fff;
+  //   color: $secondaryColor;
+  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  // }
 }
 
 footer form {
