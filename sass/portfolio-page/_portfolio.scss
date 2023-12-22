@@ -36,7 +36,9 @@
 }
 .proj-list-btn {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
   flex-direction: row;
   margin-top: 12vh;
   margin-bottom: 10vh;
