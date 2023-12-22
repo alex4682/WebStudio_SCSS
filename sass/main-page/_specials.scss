@@ -3,6 +3,7 @@
   width: 100vw;
   margin-bottom: 118px;
   margin-top: 94px;
+  padding: 0;
 }
 
 .list-sp-tytle {
@@ -33,6 +34,7 @@
 }
 .specials-list {
   width: 90%;
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
   gap: 30px;
