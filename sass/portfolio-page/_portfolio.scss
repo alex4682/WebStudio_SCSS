@@ -33,6 +33,11 @@
 }
 .projects {
   margin-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    .proj-list-btn {
+      justify-content: space-around;
+    }
+  }
 }
 .proj-list-btn {
   display: flex;
@@ -71,6 +76,7 @@
 }
 
 .proj-item {
+  height: 440px;
   display: flex;
   flex-direction: column;
   &:hover {

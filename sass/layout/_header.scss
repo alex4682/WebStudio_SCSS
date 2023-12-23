@@ -5,20 +5,63 @@
   width: 100%;
   height: 4px;
   position: absolute;
-  top: 46px;
+  top: 43px;
   right: 0;
   display: inline-block;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+.phone-use {
+  fill: $grayColor;
+}
 .header {
   @extend %conteiner;
+  margin: 0;
+  padding: 0;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
-  // gap: 0px 90px;
   height: 80px;
   align-items: center;
   gap: 0;
+  @media screen and (min-width: 480px) {
+    .header-wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .header-modal-svg {
+      display: none;
+    }
+    .header-nav {
+      display: flex;
+    }
+    .contacts-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .list-header-nav {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      gap: 0px 34px;
+    }
+    .header-link {
+      color: $blackColor;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      display: block;
+      position: relative;
+    }
+    .contacts-link {
+      color: $grayColor;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      margin-top: 32px;
+    }
+  }
 }
 .list-header-nav {
   display: none;
@@ -36,10 +79,6 @@
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.78px;
-
-  &:hover {
-    animation: pulse 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
 
 .web {
@@ -64,13 +103,6 @@
 // .header-wrap {
 //   display: flex;
 //   gap: 0px 320px;
-// }
-
-// .header-link {
-//   color: $blackColor;
-//   font-size: 14px;
-//   font-weight: 500;
-//   letter-spacing: 0.28px;
 // }
 
 // .header-item {
@@ -104,11 +136,4 @@
 //     letter-spacing: 0.28px;
 //     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 //   }
-// }
-// .contacts-link {
-//   color: $grayColor;
-//   font-size: 14px;
-//   font-weight: 500;
-//   letter-spacing: 0.28px;
-//   margin-top: 32px;
 // }

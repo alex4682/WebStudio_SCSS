@@ -3,6 +3,11 @@
   width: 100vw;
   margin-bottom: 60px;
   padding: 0;
+  @media screen and (min-width: 480px) {
+    .clients-item {
+      width: 225px;
+    }
+  }
 }
 
 .clients-tytle {
