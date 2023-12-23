@@ -11,12 +11,6 @@
 
 .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
   width: 100vw;
-  margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
-    width: 480px;
-  }
 }
 @media screen and (min-width: 768px) {
   .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
@@ -25,7 +19,7 @@
 }
 @media screen and (min-width: 1200px) {
   .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
-    width: 1200px;
+    width: 100vw;
   }
 }
 
@@ -409,7 +403,7 @@ ul {
   .specials .specials-svg-wrap,
   .specials .list-sp-text,
   .specials .list-sp-tytle {
-    width: 35vw;
+    width: 30vw;
   }
 }
 
@@ -596,7 +590,7 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .clients .clients-item {
-    width: 225px;
+    width: 29vw;
   }
 }
 
