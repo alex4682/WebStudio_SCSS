@@ -46,6 +46,16 @@
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-fill-mode: both;
   }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+    .modal-label {
+      height: 30px;
+    }
+    .modal-text-input {
+      height: 150px;
+    }
+  }
 }
 
 .modal-close {
@@ -78,7 +88,6 @@
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
-  margin-top: 40px;
 }
 
 .modal-form {

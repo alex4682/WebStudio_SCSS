@@ -11,10 +11,16 @@
 
 .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
   width: 100vw;
+  margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
-    width: 100vw;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer, .clients, .people-wrap, .people, .specials, .banner, .header, main, body {
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -135,7 +141,7 @@ ul {
   .header .header-wrap {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
   .header .header-modal-svg {
     display: none;
@@ -152,7 +158,7 @@ ul {
     display: flex;
     justify-content: center;
     align-self: center;
-    gap: 0px 34px;
+    gap: 11px;
   }
   .header .header-link {
     color: #212121;
@@ -279,6 +285,18 @@ ul {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-fill-mode: both;
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .modal .modal-label {
+    height: 30px;
+  }
+  .modal .modal-text-input {
+    height: 150px;
+  }
+}
 
 .modal-close {
   border-radius: 50%;
@@ -303,7 +321,6 @@ ul {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
-  margin-top: 40px;
 }
 
 .modal-form {
@@ -387,6 +404,7 @@ ul {
 @media screen and (min-width: 480px) {
   .specials .specials-list {
     width: 100%;
+    justify-content: center;
   }
   .specials .specials-svg-wrap,
   .specials .list-sp-text,
@@ -492,6 +510,7 @@ ul {
   .people .people-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .people .people-item {
     width: 48%;
