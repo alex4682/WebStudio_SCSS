@@ -2,10 +2,23 @@
   @extend %conteiner;
   width: 100vw;
   margin-bottom: 60px;
-  padding: 0;
   @media screen and (min-width: 480px) {
     .clients-item {
       width: 29vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .clients-item {
+      width: 170px;
+      &:hover .clients-use {
+        fill: $secondaryColor;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+      }
+      &:hover {
+        border: 1px solid $secondaryColor;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
+      }
     }
   }
 }
@@ -37,15 +50,6 @@
   border: 1px solid #afb1b8;
   justify-content: center;
   align-items: center;
-  // &:hover .clients-use {
-  //   fill: $secondaryColor;
-  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  // }
-  // &:hover {
-  //   border: 1px solid $secondaryColor;
-  //   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  //   animation: scale 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
-  // }
 }
 
 .clients-use {

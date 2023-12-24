@@ -1,10 +1,19 @@
 .banner {
-  @extend %conteiner;
   width: 100%;
   background-image: url(../img/img_bg.jpg);
   background-size: 100vw 95vh;
   background-repeat: no-repeat;
   height: 85vh;
+  @media screen and (min-width: 1200px) {
+    .banner-tytle {
+      font-size: 44px;
+      width: 700px;
+    }
+  }
+}
+.banner-wrap {
+  @extend %conteiner;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

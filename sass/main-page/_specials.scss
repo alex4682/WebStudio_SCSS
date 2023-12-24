@@ -2,7 +2,6 @@
   @extend %conteiner;
   margin-bottom: 118px;
   margin-top: 94px;
-  padding: 0;
   @media screen and (min-width: 480px) {
     .specials-list {
       width: 100%;
@@ -12,6 +11,19 @@
     .list-sp-text,
     .list-sp-tytle {
       width: 30vw;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .specials-list {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .list-sp-text,
+    .list-sp-tytle {
+      width: 100%;
+    }
+    .specials-svg-wrap {
+      width: 12vw;
     }
   }
 }
