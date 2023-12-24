@@ -1,6 +1,6 @@
 .work {
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -18,7 +18,7 @@
     .work-item,
     .work-img {
       position: relative;
-      width: 321px;
+      width: 360px;
       height: 294px;
     }
 
@@ -41,12 +41,6 @@
       font-weight: 700;
       letter-spacing: 0.42px;
       text-transform: uppercase;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    .work-item,
-    .work-img {
-      width: 360px;
     }
   }
 }
