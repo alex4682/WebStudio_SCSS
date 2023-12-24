@@ -1,20 +1,20 @@
-{ 
-    "editor.tabSize": 2,
-  
+{
+  "editor.tabSize": 2,
+
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.formats": [ 
-        {
-            "format": "expanded",
-            "autoprefix": "last 5 versions",
-            "extensionName": ".css",
-            "savePath": "css" 
-        },
-         {
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "autoprefix": "last 5 versions",
+      "extensionName": ".css",
+      "savePath": "css"
+    },
+    {
       "format": "compressed",
       "autoprefix": "last 5 versions",
       "extensionName": ".min.css",
       "savePath": "/css"
     }
-
-    ],
+  ],
+  "liveServer.settings.port": 5501
 }

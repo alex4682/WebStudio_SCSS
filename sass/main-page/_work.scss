@@ -1,6 +1,6 @@
 .work {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -15,16 +15,11 @@
       gap: 0px 30px;
     }
 
-    .work-item {
-      position: relative;
-      width: 360px;
-      height: 294px;
-    }
-
+    .work-item,
     .work-img {
-      width: 360px;
+      position: relative;
+      width: 321px;
       height: 294px;
-      box-sizing: border-box;
     }
 
     .work-bg {
@@ -46,6 +41,12 @@
       font-weight: 700;
       letter-spacing: 0.42px;
       text-transform: uppercase;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .work-item,
+    .work-img {
+      width: 360px;
     }
   }
 }

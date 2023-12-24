@@ -13,12 +13,12 @@
       width: 48%;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     .people-list {
       flex-wrap: nowrap;
     }
     .people-item {
-      width: 300px;
+      width: 23vw;
     }
     .svg-hover {
       &:hover .people-use {
@@ -30,6 +30,11 @@
         transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
         animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
       }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .people-item {
+      width: 300px;
     }
   }
 }
