@@ -1,29 +1,27 @@
-.active::after {
-  content: "";
-  border-radius: 2px;
-  background: $secondaryColor;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  top: 43px;
-  right: 0;
-  display: inline-block;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
 .phone-use {
   fill: $grayColor;
 }
 .header {
   @extend %conteiner;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 80px;
   align-items: center;
-  gap: 0;
-  @media screen and (min-width: 480px) {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    .active::after {
+      content: "";
+      border-radius: 2px;
+      background: $secondaryColor;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      top: 59px;
+      right: 0;
+      display: inline-block;
+      transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    }
     .header-wrap {
       display: flex;
       align-items: center;
@@ -62,7 +60,7 @@
       margin-top: 32px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .contacts-list {
       flex-direction: row;
       gap: 30px;
@@ -99,13 +97,9 @@
     }
   }
 }
-.list-header-nav {
+.header-wrap {
   display: none;
 }
-.contacts-list {
-  display: none;
-}
-
 .list-header-nav {
   margin-top: 100px;
 }

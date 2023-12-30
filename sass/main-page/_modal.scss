@@ -46,7 +46,7 @@
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-fill-mode: both;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
     .modal-label {

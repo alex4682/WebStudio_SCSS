@@ -58,12 +58,6 @@ ul {
   padding: 0;
 }
 
-.conteiner {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0px 15px;
-}
-
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -103,34 +97,31 @@ ul {
     transform: scaleY(1);
   }
 }
-.active::after {
-  content: "";
-  border-radius: 2px;
-  background: #2196F3;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  top: 43px;
-  right: 0;
-  display: inline-block;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-}
-
 .phone-use {
   fill: #757575;
 }
 
 .header {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 80px;
   align-items: center;
-  gap: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .header .active::after {
+    content: "";
+    border-radius: 2px;
+    background: #2196F3;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 59px;
+    right: 0;
+    display: inline-block;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   .header .header-wrap {
     display: flex;
     align-items: center;
@@ -169,7 +160,7 @@ ul {
     margin-top: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header .contacts-list {
     flex-direction: row;
     gap: 30px;
@@ -200,11 +191,7 @@ ul {
   }
 }
 
-.list-header-nav {
-  display: none;
-}
-
-.contacts-list {
+.header-wrap {
   display: none;
 }
 
@@ -318,7 +305,7 @@ ul {
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   animation-fill-mode: both;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -433,7 +420,7 @@ ul {
   margin-bottom: 118px;
   margin-top: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .specials .specials-list {
     width: 100%;
     justify-content: center;
@@ -498,7 +485,7 @@ ul {
 .work {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .work {
     display: flex;
     flex-direction: column;
@@ -520,7 +507,7 @@ ul {
   .work .work-item,
   .work .work-img {
     position: relative;
-    width: 321px;
+    width: 360px;
     height: 294px;
   }
   .work .work-bg {
@@ -543,12 +530,6 @@ ul {
     text-transform: uppercase;
   }
 }
-@media screen and (min-width: 1200px) {
-  .work .work-item,
-  .work .work-img {
-    width: 360px;
-  }
-}
 
 .people {
   margin-top: 94px;
@@ -556,7 +537,7 @@ ul {
   background: #F5F4FA;
   padding-bottom: 188px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .people .people-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -564,23 +545,6 @@ ul {
   }
   .people .people-item {
     width: 48%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .people .people-list {
-    flex-wrap: nowrap;
-  }
-  .people .people-item {
-    width: 23vw;
-  }
-  .people .svg-hover:hover .people-use {
-    fill: #fff;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  }
-  .people .svg-hover:hover {
-    background-color: #2196F3;
-    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-    animation: scale 250ms cubic-bezier(0.4, 0, 0.2, 1) both;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -665,7 +629,7 @@ ul {
   width: 100vw;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .clients .clients-item {
     width: 29vw;
   }
@@ -726,7 +690,7 @@ ul {
   background-color: #2F303A;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer .footer-wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -949,7 +913,7 @@ ul {
 .projects {
   margin-bottom: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .projects .proj-list-btn {
     justify-content: space-around;
   }
