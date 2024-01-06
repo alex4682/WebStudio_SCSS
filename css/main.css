@@ -161,6 +161,14 @@ ul {
   }
 }
 @media screen and (min-width: 1200px) {
+  .header .contacts-link,
+  .header .header-link {
+    font-size: 15px;
+  }
+  .header .header-wrap {
+    width: 800px;
+    justify-content: space-between;
+  }
   .header .contacts-list {
     flex-direction: row;
     gap: 30px;
@@ -170,7 +178,7 @@ ul {
   }
   .header .header-item:hover .header-link {
     color: #2196F3;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -181,7 +189,7 @@ ul {
   }
   .header .contacts-item:hover .contacts-link {
     color: #2196F3;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 500;
     letter-spacing: 0.28px;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
