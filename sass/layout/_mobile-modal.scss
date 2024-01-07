@@ -1,0 +1,122 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.header-link {
+  color: $blackColor;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  display: block;
+  position: relative;
+}
+.contacts-link {
+  color: $grayColor;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.28px;
+  margin-top: 32px;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  width: 85vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #fff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.active {
+  color: $secondaryColor;
+  fill: $secondaryColor;
+}
+
+.social-mobile-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-mobile-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122.222%;
+  letter-spacing: 0.36px;
+}
+.modal-mobile-close {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $whiteColor;
+  margin: 8px 8px 0 0;
+  padding: 6px 7px 7px 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.mobile-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+}

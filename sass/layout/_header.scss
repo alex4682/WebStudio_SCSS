@@ -1,6 +1,11 @@
 .phone-use {
   fill: $grayColor;
 }
+.menu-toggle {
+  background: none;
+  border: none;
+}
+
 .header {
   @extend %conteiner;
   display: flex;
@@ -22,6 +27,23 @@
       display: inline-block;
       transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     }
+    .header-link {
+      color: $blackColor;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      display: block;
+      position: relative;
+    }
+
+    .contacts-link {
+      color: $grayColor;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      margin-top: 32px;
+    }
+
     .header-wrap {
       display: flex;
       align-items: center;
@@ -43,21 +65,6 @@
       justify-content: center;
       align-self: center;
       gap: 11px;
-    }
-    .header-link {
-      color: $blackColor;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.28px;
-      display: block;
-      position: relative;
-    }
-    .contacts-link {
-      color: $grayColor;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 0.28px;
-      margin-top: 32px;
     }
   }
   @media screen and (min-width: 1200px) {
