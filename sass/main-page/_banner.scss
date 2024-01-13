@@ -1,10 +1,22 @@
 .banner {
   width: 100%;
   background-image: url(../img/img_bg.jpg);
-  background-size: 100vw 95vh;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
-  height: 85vh;
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 768px) {
+    background-size: 100vw 340px;
+  }
+  @media screen and (min-width: 768px) {
+    .banner-wrap {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    .banner-wrap {
+      padding-top: 175px;
+      padding-bottom: 175px;
+    }
     .banner-tytle {
       font-size: 44px;
       width: 700px;
@@ -12,6 +24,8 @@
   }
 }
 .banner-wrap {
+  padding-top: 70px;
+  padding-bottom: 70px;
   @extend %conteiner;
   height: 100%;
   display: flex;

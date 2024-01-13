@@ -9,11 +9,11 @@
   border: none;
 }
 
-.footer-wrap, .clients, .people-wrap, .specials, .banner-wrap, .header, main, body {
+.projects, .footer-wrap, .clients, .people-wrap, .specials, .banner-wrap, .header, main, body {
   width: 100vw;
 }
 @media screen and (min-width: 1200px) {
-  .footer-wrap, .clients, .people-wrap, .specials, .banner-wrap, .header, main, body {
+  .projects, .footer-wrap, .clients, .people-wrap, .specials, .banner-wrap, .header, main, body {
     width: 1200px;
     margin: 0 auto;
   }
@@ -230,11 +230,25 @@ ul {
 .banner {
   width: 100%;
   background-image: url(../img/img_bg.jpg);
-  background-size: 100vw 95vh;
+  background-size: 100vw auto;
   background-repeat: no-repeat;
-  height: 85vh;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
+  .banner {
+    background-size: 100vw 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner .banner-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .banner .banner-wrap {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
   .banner .banner-tytle {
     font-size: 44px;
     width: 700px;
@@ -242,6 +256,8 @@ ul {
 }
 
 .banner-wrap {
+  padding-top: 70px;
+  padding-bottom: 70px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -558,6 +574,7 @@ ul {
   }
   .people .people-item {
     width: 48%;
+    height: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -610,6 +627,7 @@ ul {
 
 .list-people-image {
   width: 100%;
+  height: auto;
 }
 
 .list-people-job {

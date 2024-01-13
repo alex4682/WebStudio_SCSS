@@ -11,6 +11,7 @@
     }
     .people-item {
       width: 48%;
+      height: auto;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -59,6 +60,7 @@
 }
 .list-people-image {
   width: 100%;
+  height: auto;
 }
 .list-people-job {
   color: $grayColor;

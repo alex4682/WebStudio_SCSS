@@ -33,6 +33,7 @@
 }
 .projects {
   margin-bottom: 94px;
+  @extend %conteiner;
   @media screen and (min-width: 768px) {
     .proj-list-btn {
       justify-content: center;
