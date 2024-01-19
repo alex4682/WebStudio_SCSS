@@ -1,27 +1,37 @@
 .banner {
   width: 100%;
-  background-image: url(../img/img_bg.jpg);
+  background-image: url(../img/banner-bg-mobile.jpg);
+  background-color: rgba(47, 48, 58, 0.4);
   background-size: 100vw auto;
   background-repeat: no-repeat;
-  @media screen and (max-width: 768px) {
-    background-size: 100vw 340px;
-  }
   @media screen and (min-width: 768px) {
+    background-image: url(../img/banner-bg-tablet.jpg);
     .banner-wrap {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: 70px;
+      padding-bottom: 60px;
     }
   }
   @media screen and (min-width: 1200px) {
+    background-image: url(../img/img_bg.jpg);
     .banner-wrap {
-      padding-top: 175px;
-      padding-bottom: 175px;
+      padding-top: 103px;
+      padding-bottom: 120px;
     }
     .banner-tytle {
       font-size: 44px;
       width: 700px;
     }
   }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img@2x/banner-bg-mobile@2x.jpg);
+    @media screen and(min-width: 768px) {
+      background-image: url(img@2x/banner-bg@2x.jpg);
+    }
+    @media screen and(min-width: 768px) {
+      background-image: url(../img@2x/banner-bg-tablet@2x.jpg);
+    }
 }
 .banner-wrap {
   padding-top: 70px;

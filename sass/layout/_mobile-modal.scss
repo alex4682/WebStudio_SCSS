@@ -40,12 +40,10 @@
   justify-content: space-around;
   top: 0;
   left: 0;
-  width: 85vw;
+  width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: #fff;
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -92,7 +90,7 @@
 
 .social-mobile-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .social-mobile-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -112,11 +110,11 @@
   background-color: $whiteColor;
   margin: 8px 8px 0 0;
   padding: 6px 7px 7px 6px;
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
-  display: flex;
-  align-items: center;
 }
 .mobile-wrap {
   display: flex;
