@@ -246,13 +246,45 @@ ul {
   background-size: 100vw auto;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 400px) {
+  .banner .banner-wrap {
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+  .banner .banner-tytle {
+    font-size: 21px;
+  }
+}
 @media screen and (min-width: 768px) {
   .banner {
     background-image: url(../img/banner-bg-tablet.jpg);
   }
   .banner .banner-wrap {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../img@2x/banner-bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .banner {
+    background-image: url(../img/img_bg.jpg);
+  }
+  .banner .banner-wrap {
+    padding-top: 75px;
+    padding-bottom: 72px;
+  }
+  .banner .banner-tytle {
+    font-size: 44px;
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1000px) and (min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1000px) and (min-resolution: 192dpi), screen and (min-width: 1000px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(img@2x/banner-bg@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -261,11 +293,21 @@ ul {
   }
   .banner .banner-wrap {
     padding-top: 103px;
-    padding-bottom: 120px;
+    padding-bottom: 115px;
   }
   .banner .banner-tytle {
     font-size: 44px;
     width: 700px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(img@2x/banner-bg@2x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../img@2x/banner-bg-mobile@2x.jpg);
   }
 }
 
