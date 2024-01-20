@@ -1,87 +1,47 @@
 .banner {
   width: 100%;
-  background-image: url(../img/banner-bg-mobile.jpg);
+  background-image: linear-gradient(150deg, rgba(47, 48, 58, 0.3) 50%, rgba(47, 48, 58, 0.3) 83%), url(../img/banner-bg-mobile.jpg);
   background-color: rgba(47, 48, 58, 0.4);
-  background-size: 100vw auto;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  height: 500px;
 
-  @media screen and (max-width: 400px) {
-    .banner-wrap {
-      padding-bottom: 0;
-      padding-top: 15px;
-    }
-
-    .banner-tytle {
-      font-size: 21px;
-    }
+  @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 768px) and (min-resolution: 192dpi),
+  screen and (max-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(../img@2x/banner-bg-mobile@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../img/banner-bg-tablet.jpg);
+    background-image: linear-gradient(150deg, rgba(47, 48, 58, 0.3) 50%, rgba(47, 48, 58, 0.3) 83%), url(../img/banner-bg-tablet.jpg);
+    height: 500px;
 
-    .banner-wrap {
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
       background-image: url(../img@2x/banner-bg-tablet@2x.jpg);
     }
   }
 
-  @media screen and (min-width: 1000px) {
-    background-image: url(../img/img_bg.jpg);
-
-    .banner-wrap {
-      padding-top: 75px;
-      padding-bottom: 72px;
-    }
-
-    .banner-tytle {
-      font-size: 44px;
-      width: 700px;
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(img@2x/banner-bg@2x.jpg);
-    }
-  }
-
   @media screen and (min-width: 1200px) {
-    background-image: url(../img/img_bg.jpg);
-
-    .banner-wrap {
-      padding-top: 103px;
-      padding-bottom: 115px;
-    }
+    background-image: linear-gradient(150deg, rgba(47, 48, 58, 0.3) 50%, rgba(47, 48, 58, 0.3) 83%), url(../img/img_bg.jpg);
+    height: 540px;
 
     .banner-tytle {
       font-size: 44px;
       width: 700px;
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(img@2x/banner-bg@2x.jpg);
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+      background-image: url(../img@2x/banner-bg@2x.jpg);
     }
   }
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../img@2x/banner-bg-mobile@2x.jpg);
-
-  }
 }
 
 .banner-wrap {
-  padding-top: 70px;
-  padding-bottom: 70px;
   @extend %conteiner;
   height: 100%;
   display: flex;
