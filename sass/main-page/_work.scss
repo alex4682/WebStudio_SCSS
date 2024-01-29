@@ -1,9 +1,11 @@
 .work {
   display: none;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
     .work-tytle {
       @include title($blackColor, 36px, normal, 700);
       letter-spacing: 1.08px;
@@ -18,6 +20,7 @@
     .work-item,
     .work-img {
       position: relative;
+      display: flex;
       width: 360px;
       height: 294px;
     }

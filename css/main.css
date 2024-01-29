@@ -554,6 +554,7 @@ ul {
   .work .work-item,
   .work .work-img {
     position: relative;
+    display: flex;
     width: 360px;
     height: 294px;
   }
@@ -621,7 +622,7 @@ ul {
   background-color: #fff;
   width: 80%;
   height: 428px;
-  gap: 30px;
+  height: auto;
 }
 
 .people-tytle {
